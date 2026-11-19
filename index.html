@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf7f4">
+  <meta
+    name="description"
+    content="Contact The Paediatric Nest and Dr Ashok Dhaker, Paediatrician."
+  >
+  <title>The Paediatric Nest | Dr Ashok Dhaker</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #193b3c;
+      --muted: #587272;
+      --teal: #167c76;
+      --teal-dark: #11635e;
+      --mint: #eaf7f4;
+      --card: #ffffff;
+      --line: #e4efed;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 28px 16px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(ellipse at 12% 10%, #d7f0e9 0, transparent 34%),
+        radial-gradient(ellipse at 92% 90%, #dceef8 0, transparent 32%),
+        var(--mint);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
+
+    .page {
+      width: min(100%, 440px);
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .9);
+      border-radius: 28px;
+      background: var(--card);
+      box-shadow: 0 22px 65px rgba(34, 86, 79, .13);
+    }
+
+    .header {
+      padding: 34px 26px 28px;
+      text-align: center;
+      background: linear-gradient(145deg, #f5fcfa, #e6f5f1);
+    }
+
+    .mark {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 17px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(22, 124, 118, .12);
+      border-radius: 24px;
+      background: #fff;
+      color: var(--teal);
+      box-shadow: 0 8px 24px rgba(22, 124, 118, .1);
+    }
+
+    .mark svg { width: 42px; height: 42px; }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 7vw, 2.15rem);
+      line-height: 1.15;
+      letter-spacing: -.04em;
+    }
+
+    .subtitle {
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .details {
+      padding: 25px 26px 28px;
+    }
+
+    .doctor {
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    .doctor h2 {
+      margin: 0;
+      font-size: 1.3rem;
+      letter-spacing: -.02em;
+    }
+
+    .doctor p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .actions {
+      display: grid;
+      gap: 11px;
+    }
+
+    .button {
+      min-height: 53px;
+      padding: 13px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 1rem;
+      font-weight: 650;
+      text-align: center;
+      text-decoration: none;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(25, 59, 60, .08);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid #78c9bd;
+      outline-offset: 3px;
+    }
+
+    .button svg {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 auto;
+    }
+
+    .button.primary {
+      border-color: var(--teal);
+      background: var(--teal);
+      color: white;
+    }
+
+    .button.primary:hover { background: var(--teal-dark); }
+
+    .button.whatsapp {
+      border-color: #ccebd9;
+      background: #effaf3;
+      color: #176b3a;
+    }
+
+    .button.instagram {
+      border-color: #f0d9e8;
+      background: #fff7fb;
+      color: #963c76;
+    }
+
+    .number {
+      margin: 17px 0 0;
+      color: var(--muted);
+      font-size: .9rem;
+      text-align: center;
+    }
+
+    footer {
+      padding: 0 16px 21px;
+      color: var(--muted);
+      font-size: .78rem;
+      text-align: center;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card" aria-labelledby="clinic-name">
+      <header class="header">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M24 39s-15-9.2-15-20a8.5 8.5 0 0 1 15-5.5A8.5 8.5 0 0 1 39 19c0 10.8-15 20-15 20Z"
+              stroke="currentColor" stroke-width="2.7" stroke-linecap="round"
+              stroke-linejoin="round"/>
+            <path d="M18 24h4l2-4 3.2 8 2-4H34"
+              stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
+              stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h1 id="clinic-name">The Paediatric Nest</h1>
+        <p class="subtitle">Care for little ones, every step of the way</p>
+      </header>
+
+      <section class="details" aria-label="Clinic contact information">
+        <div class="doctor">
+          <h2>Dr Ashok Dhaker</h2>
+          <p>Paediatrician</p>
+        </div>
+
+        <nav class="actions" aria-label="Contact and clinic links">
+          <a class="button primary" href="tel:+918447837790">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 4h3l2 5-2.2 1.5a15 15 0 0 0 5.7 5.7L15 14l5 2v3c0 1.1-.9 2-2 2C10 21 3 14 3 6c0-1.1.9-2 2-2Z"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round"/>
+            </svg>
+            Call 84478 37790
+          </a>
+
+          <a class="button whatsapp" href="https://wa.me/918447837790"
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4A8 8 0 1 1 20 11.7Z"
+                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M9 8.5c.3-.5.6-.5.9-.5h.5l.8 2-1 .9c.7 1.4 1.5 2.2 2.9 2.9l.9-1 2 .8v.5c0 .4-.1.7-.5.9-.6.3-1.3.4-2 .2-2.6-.7-5-3-5.7-5.7-.2-.7-.1-1.4.2-2Z"
+                fill="currentColor"/>
+            </svg>
+            WhatsApp
+          </a>
+
+          <a class="button" href="https://maps.app.goo.gl/FvArvrAdTSRWrAUXA?g_st=ic"
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"
+                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            Open Google Maps
+          </a>
+
+          <a class="button instagram"
+             href="https://www.instagram.com/dr_ashok_dhaker?gwpx=dDJ6dXg2aWthNXJ3&amp;utm_source=qr"
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="5"
+                stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.5" cy="6.8" r="1" fill="currentColor"/>
+            </svg>
+            Instagram
+          </a>
+
+          <button class="button" type="button" id="save-contact">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4 21a8 8 0 0 1 16 0M19 8v6m-3-3h6"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round"/>
+            </svg>
+            Save Contact
+          </button>
+        </nav>
+
+        <p class="number">Mobile &amp; WhatsApp: 84478 37790</p>
+      </section>
+
+      <footer>For appointments and enquiries, please get in touch.</footer>
+    </article>
+  </main>
+
+  <script>
+    document.getElementById("save-contact").addEventListener("click", () => {
+      const vcard = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "N:Dhaker;Ashok;;;",
+        "FN:Dr Ashok Dhaker",
+        "ORG:The Paediatric Nest",
+        "TITLE:Paediatrician",
+        "TEL;TYPE=CELL,VOICE:+918447837790",
+        "END:VCARD"
+      ].join("\r\n");
+
+      const file = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+      const url = URL.createObjectURL(file);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "Dr-Ashok-Dhaker.vcf";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
